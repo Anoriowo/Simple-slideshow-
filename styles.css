@@ -1,0 +1,77 @@
+body, p { 
+	margin: 0; 
+	padding: 0; 
+}
+
+body { 
+	padding: 100px; 
+	background: #717171; 
+}
+
+#content {
+	margin: 100px auto 20px auto;
+	border: 10px solid #4C4C4C;
+	width: 400px;
+	height: 266px;
+	position: relative;
+}
+
+#content img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+p { text-align: center; }
+
+/********** Link Styles ***********/
+
+#links {
+	width: 420px;
+	display: flex;
+	margin: auto;
+}
+
+#links a {
+	display: block;
+	flex: 1;
+	background: #2e026c;
+	height: 50px;
+	line-height: 50px;
+	color: #D5D5D5;
+	text-decoration: none;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+
+#links a:hover {
+	background: #221da586;
+	color: #fff;
+}
+
+/************ Animation Styles ************/
+.fadeinimg{
+	animation: fadein 2s, rotate 2s;
+	z-index: -1;
+	
+}
+@keyframes fadein {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+
+	
+}
+
+/*optional*/
+
+/* @keyframes rotate{
+	from{rotate: 0deg;}
+	from{rotate: 90deg;}
+	
+} */
